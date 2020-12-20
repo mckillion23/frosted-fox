@@ -5,15 +5,17 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  max-width: 300px;
+  max-height: 82px;
 }
 
 .App-header {
-  background-color: #636262;
+  background-color: #ec8e00;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 153, 0);
+  color: rgb(0, 0, 0);
 }
