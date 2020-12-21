@@ -7,6 +7,7 @@
 ## Details
 
 [Website](http://www.frostedfox.co.uk/)
+
 [Code](https://github.com/mckillion23/frosted-fox)
 
 ## Running Locally
