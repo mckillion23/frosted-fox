@@ -2,6 +2,8 @@ import React from 'react';
 import Facebook from "../../components/features/Facebook";
 import axios from 'axios';
 
+const FB = window.FB;
+
 export default class About extends React.Component {
   state = {
     blogItems: []
@@ -12,7 +14,9 @@ export default class About extends React.Component {
       .then(res => {
         const blogItems = res.data;
         this.setState({ blogItems });
-      })
+      });
+
+      FB.XFBML.parse();
   }
 
   render() {
