@@ -1,8 +1,8 @@
-import React, { Fragment } from "react"
-import Logo from "../../components/features/Logo"
-import SignUpButton from "../../components/features/Signup"
-import Navigation from "../../components/features/Navigation"
-import { LoginLink } from "../../components/features/Login"
+import React, { Fragment } from "react";
+import Logo from "../../components/features/Logo";
+// import SignUpButton from "../../components/features/Signup";
+import Navigation from "../../components/features/Navigation";
+// import { LoginLink } from "../../components/features/Login";
 
 const Header = () => (
     <Fragment>
@@ -15,10 +15,11 @@ const Header = () => (
                 <div className="xs:hidden sm:hidden md:hidden">
                 <Navigation/>
                 </div>
-            <div className="flex xs:hidden items-center ml-auto">
+            {/* TODO add sign up login functionality */}
+            {/* <div className="flex xs:hidden items-center ml-auto">
                 <SignUpButton />
                 <LoginLink />
-            </div>
+            </div> */}
             </div>
         </header>
     </Fragment>)
