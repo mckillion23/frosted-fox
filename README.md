@@ -1,6 +1,5 @@
 <p align="center">
 <img src="https://github.com/mckillion23/frosted-fox/blob/master/src/images/logo.png"/>
-<h3 align="center">Frosted Fox</h3>
 </p> 
 <h5 align="center">Frosted Fox Bakery based in Northern Ireland.</h5>
 <h5 align="center">Website created by: Mark Mckillion (https://github.com/mckillion23)</h5>
