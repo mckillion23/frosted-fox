@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #fff4e5;
 }
 
 /**
@@ -18075,7 +18076,7 @@ video {
 
 .text-white {
   --text-opacity: 1;
-  color: #fff;
+  color: #fff4e5;
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
