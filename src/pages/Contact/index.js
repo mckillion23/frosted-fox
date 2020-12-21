@@ -1,7 +1,7 @@
 import React from "react"
-const Products = () => (
+const Contact = () => (
     <div className="mt-10 flex flex-col items-center pb-24">
-        Product information coming soon
+        Contact information coming soon
     </div>
 )
-export default Products
+export default Contact

@@ -1,26 +1,20 @@
 import React from "react"
 import { Switch, Route } from "react-router-dom"
-import Home, {
-    FeaturesPage,
-    ProductsPage,
-    CustomersPage,
-    SalesPage,
-    LoginPage
-} from "../../../pages"
+import Home, { AboutPage, ContactPage, LoginPage, ProductsPage, TestimoniesPage } from "../../../pages"
 
 const Switcher = () => (
     <Switch>
-        <Route path="/features">
-            <FeaturesPage />
+        <Route path="/about">
+            <AboutPage />
         </Route>
         <Route path="/products">
             <ProductsPage />
         </Route>
-        <Route path="/customers">
-            <CustomersPage />
+        <Route path="/testimonies">
+            <TestimoniesPage />
         </Route>
-        <Route path="/sales">
-            <SalesPage />
+        <Route path="/contact">
+            <ContactPage />
         </Route>
         <Route path="/login">
             <LoginPage />

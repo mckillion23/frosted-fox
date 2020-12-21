@@ -1,6 +1,6 @@
 export const HOME = { link: "/" };
-export const FEATURES = { name: "Features", link: "/features" };
 export const PRODUCTS = { name: "Products", link: "/products" };
-export const CUSTOMERS = { name: "Customers", link: "/customers" };
-export const SALES = { name: "Sales", link: "/sales" };
+export const ABOUT = { name: "About", link: "/about" };
+export const TESTIMONIES = { name: "Testimonies", link: "/testimonies" };
+export const CONTACT = { name: "Contact", link: "/contact" };
 export const LOGIN = { name: "Login", link: "/login" };

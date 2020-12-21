@@ -1,9 +1,9 @@
-import CustomersPage from "./Customers"
+import AboutPage from "./About"
+import ContactPage from "./Contact"
 import HomePage from "./Home"
-import FeaturesPage from "./Features"
-import ProductsPage from "./Products"
-import SalesPage from "./Sales"
 import LoginPage from "./Login"
+import ProductsPage from "./Products"
+import TestimoniesPage from "./Testimonies"
 
 export default HomePage;
-export { FeaturesPage, ProductsPage, SalesPage, CustomersPage, LoginPage }
+export { AboutPage, ContactPage, HomePage, LoginPage, ProductsPage, TestimoniesPage }

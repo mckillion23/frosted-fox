@@ -28,8 +28,8 @@ module.exports = {
 
     },
     colors: {
-      brand: '#8F17FA',
-      "brand-dark": '#2F0739',
+      brand: '#f2614a',
+      "brand-dark": '#ec8e00',
       transparent: 'transparent',
       current: 'currentColor',
 
