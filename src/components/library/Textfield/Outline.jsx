@@ -1,17 +1,13 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 const Field = ({
     type,
     name,
     id,
     placeholder,
-    isFocused }) => {
+    onChange }) => {
 
     const ref = React.createRef();
-
-    useEffect(() => {
-        isFocused && ref.current.focus()
-    });
 
     return (<input className="bg-white tracking-wide rounded-md mt-1 px-4 py-2 border focus:border-brand focus:shadow-outline-sm focus:outline-none"
         ref={ref}
@@ -20,7 +16,8 @@ const Field = ({
         id={id}
         placeholder={placeholder}
         spellCheck="false"
-        aria-describedBy=" "
+        aria-describedby=" "
+        onChange={onChange}
     />)
 }
 

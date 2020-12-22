@@ -1,5 +1,5 @@
 import AboutPage from "./About"
-import ContactPage from "./Contact"
+import ContactPage from "./ContactForm"
 import HomePage from "./Home"
 import LoginPage from "./Login"
 import ProductsPage from "./Products"
