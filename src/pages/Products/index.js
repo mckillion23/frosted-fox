@@ -1,13 +1,6 @@
 import React from 'react';
 import Facebook from "../../components/features/Facebook";
-
-const FB = window.FB;
-
 export default class Products extends React.Component {
-  componentDidMount() {
-      FB.XFBML.parse();
-  }
-
   render() {
     return (
         <div className="mt-10 flex flex-col items-center pb-24">
