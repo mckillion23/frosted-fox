@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { OutlineField as SubjectField } from '../../../../library/Textfield';
 import Label from '../../../../library/Label';
 
 const Subject = ({ onChange }) => {
-  const subject = {
+  const subjectParams = {
     type: 'text',
     id: 'subject',
     placeholder: 'email subject',
@@ -12,9 +13,17 @@ const Subject = ({ onChange }) => {
   return (
     <div className="flex flex-col">
       <Label value="Subject" />
-      <SubjectField onChange={onChange} {...subject} />
+      <SubjectField params={subjectParams} onChange={onChange} />
     </div>
   );
+};
+
+Subject.propTypes = {
+  onChange: PropTypes.func,
+};
+
+Subject.defaultProps = {
+  onChange: '',
 };
 
 export default Subject;

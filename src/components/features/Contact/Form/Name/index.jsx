@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { OutlineField as NameField } from '../../../../library/Textfield';
 import Label from '../../../../library/Label';
 
 const Name = ({ onChange }) => {
-  const name = {
+  const nameParams = {
     type: 'text',
     id: 'name',
     placeholder: 'full name',
@@ -13,9 +14,17 @@ const Name = ({ onChange }) => {
   return (
     <div className="flex flex-col">
       <Label value="Name" />
-      <NameField onChange={onChange} {...name} />
+      <NameField params={nameParams} onChange={onChange} />
     </div>
   );
+};
+
+Name.propTypes = {
+  onChange: PropTypes.func,
+};
+
+Name.defaultProps = {
+  onChange: '',
 };
 
 export default Name;
