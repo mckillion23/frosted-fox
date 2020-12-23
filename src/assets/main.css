@@ -11408,6 +11408,10 @@ video {
   margin-right: -1px;
 }
 
+.product-card {
+  width: 364px;
+}
+
 .mt-0 {
   margin-top: 0;
 }
