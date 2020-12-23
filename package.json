@@ -7,11 +7,8 @@
         "npm": "7.0.15"
     },
     "dependencies": {
-        "@testing-library/jest-dom": "^4.2.4",
         "autoprefixer": "^9.8.6",
-        "axios": "^0.21.0",
         "emailjs-com": "^2.6.4",
-        "prismic-dom": "^2.2.4",
         "prismic-javascript": "^3.0.2",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
@@ -24,7 +21,10 @@
         "start": "serve -s build",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "build:css": "tailwind build src/assets/tailwind.css -o src/assets/main.css",
+        "watch:css": "tailwind build src/assets/tailwind.css -o src/assets/main.css",
+        "lint": "./node_modules/eslint/bin/eslint.js src --fix"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -40,5 +40,17 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-config-react-app": "^5.2.1",
+        "eslint-plugin-flowtype": "^4.6.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.21.5",
+        "eslint-plugin-react-hooks": "^1.7.0",
+        "prop-types": "^15.7.2"
     }
 }
