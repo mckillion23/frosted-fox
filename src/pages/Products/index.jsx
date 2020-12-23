@@ -29,9 +29,12 @@ export default class Products extends React.Component {
   }
 
   render() {
+    const { productDataItems } = this.state;
     return (
       <div>
-        { this.state.productDataItems.map((productDataItem) => <ProductCard data={productDataItem} />)}
+        {productDataItems.map(
+          (productDataItem) => <ProductCard data={productDataItem} />,
+        )}
       </div>
     );
   }

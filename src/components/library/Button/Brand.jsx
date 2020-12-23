@@ -22,8 +22,9 @@ export const Button = ({
   event,
   classes,
 }) => {
+  let result;
   if (type === 'submit') {
-    return (
+    result = (
       <input
         className={classes}
         type={type}
@@ -34,7 +35,7 @@ export const Button = ({
   }
 
   if (type === 'button') {
-    return (
+    result = (
       <input
         className={classes}
         type={type}
@@ -43,6 +44,7 @@ export const Button = ({
       />
     );
   }
+  return result;
 };
 
 Button.propTypes = {
