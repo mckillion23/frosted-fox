@@ -1,3 +1,3 @@
-import { BrandButtonLarge } from "./Brand"
-import BrandButtonDefault from "./Brand"
-export { BrandButtonLarge, BrandButtonDefault }
+import BrandButtonDefault, { BrandButtonLarge } from './Brand';
+
+export { BrandButtonLarge, BrandButtonDefault };

@@ -1,2 +1,3 @@
-import Label from "./Label"
-export default Label
+import Label from './Label';
+
+export default Label;
