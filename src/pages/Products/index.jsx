@@ -5,8 +5,11 @@ import ProductCard from '../../components/features/ProductCard';
 const apiEndpoint = 'https://frosted-fox.cdn.prismic.io/api/v2';
 
 export default class Products extends React.Component {
-  state = {
-    productDataItems: [],
+  constructor(props) {
+    super(props);
+    this.state = {
+      productDataItems: [],
+    };
   }
 
   async componentDidMount() {

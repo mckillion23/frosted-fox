@@ -5,54 +5,22 @@ import Message from './Message';
 import Name from './Name';
 import Subject from './Subject';
 import Submit from './Submit';
+import validator from './FormValidator';
 
 class Form extends React.Component {
-    state = {
+  constructor(props) {
+    super(props);
+    this.state = {
       name: '',
       email: '',
       subject: '',
       message: '',
       errors: [],
-    }
-
-    resetForm() {
-      this.setState({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-        errors: [],
-      });
-      document.getElementById('send-email-form').reset();
-    }
+    };
+  }
 
     handleChange = (e) => {
       this.setState({ [e.target.id]: e.target.value });
-    }
-
-    validate(name, email, subject, message) {
-      const errors = [];
-
-      if (name.length < 3) {
-        errors.push('Name should be at least 3 charcters long');
-      }
-      if (email.length < 5) {
-        errors.push('Email should be at least 5 charcters long');
-      }
-      if (subject.length < 5) {
-        errors.push('Subject should be at least 5 charcters long');
-      }
-      if (message.length < 10) {
-        errors.push('Message should be at least 10 charcters long');
-      }
-      if (email.split('').filter((x) => x === '@').length !== 1) {
-        errors.push('Email should contain a @');
-      }
-      if (email.indexOf('.') === -1) {
-        errors.push('Email should contain at least one dot');
-      }
-
-      return errors;
     }
 
     handleSubmit = (e) => {
@@ -60,7 +28,7 @@ class Form extends React.Component {
       const {
         name, email, subject, message,
       } = this.state;
-      const errors = this.validate(name, email, subject, message);
+      const errors = validator.validate(name, email, subject, message);
       if (errors.length > 0) {
         this.setState({ errors });
         return;
@@ -82,6 +50,17 @@ class Form extends React.Component {
 
       this.resetForm();
     };
+
+    resetForm() {
+      this.setState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+        errors: [],
+      });
+      document.getElementById('send-email-form').reset();
+    }
 
     render() {
       const { errors } = this.state;
