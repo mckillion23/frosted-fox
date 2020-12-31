@@ -12,7 +12,7 @@ const Linker = () => (
         </NavLink>
       </li>
       <li className="xl:mr-6 sm:mr-8 md:mr-8 mr-4"><NavLink to={ROUTES.PRODUCTS.link} activeClassName="cursor-pointer text-orange-400">{ROUTES.PRODUCTS.name}</NavLink></li>
-      <li className="xl:mr-6 sm:mr-8 md:mr-8 mr-4"><NavLink to={ROUTES.TESTIMONIES.link} activeClassName="cursor-pointer text-orange-400">{ROUTES.TESTIMONIES.name}</NavLink></li>
+      <li className="xl:mr-6 sm:mr-8 md:mr-8 mr-4"><NavLink to={ROUTES.REVIEWS.link} activeClassName="cursor-pointer text-orange-400">{ROUTES.REVIEWS.name}</NavLink></li>
       <li className="xl:mr-6 sm:mr-8 md:mr-8 mr-4">
         <NavLink to={ROUTES.CONTACT.link} activeClassName="cursor-pointer text-orange-400">
           {' '}

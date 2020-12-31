@@ -6,7 +6,7 @@ const Home = () => (
     Website under construction.
     <br />
     <br />
-    <span className="text-brand">To contact us please use our facebook page!</span>
+    <span className="text-brand">Use the contact us form to get in touch!</span>
     <br />
     <Facebook />
   </div>

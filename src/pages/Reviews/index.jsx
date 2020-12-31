@@ -1,15 +1,15 @@
 import React from 'react';
 import Facebook from '../../components/features/Facebook';
 
-const Testimonies = () => (
+const Reviews = () => (
   <div className="mt-10 flex flex-col items-center pb-24">
-    Testimonies coming soon
+    Reviews coming soon
     <br />
     <br />
-    <span className="text-brand">To contact us please use our facebook page!</span>
+    <span className="text-brand">Use the contact us form to get in touch!</span>
     <br />
     <Facebook />
   </div>
 );
 
-export default Testimonies;
+export default Reviews;
